@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+ <!-- CSS Style Coding Started -->   
+<style>
+body{
+    background-size: cover;
+}
+*{ 
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.box{
+    margin-top: 50px;
+}
+.calculator{
+    width: 400px;
+    margin: auto;
+    height: auto;
+    padding: 15px;
+    background: #3a3a3a;
+}
+input[type=text]{
+    width: 100%;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+input[type=button]{
+    width: 89px;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#equal{
+    width: 100%;
+}
+#del{
+    background-color: red;
+    color: #fff;
+}
+
+</style>
+<!-- CSS Style Coding Ended -->
+</head>
+<!-- Head Tag EndPoint -->
+<!-- It's totally a simple calcualtor which is made by only Html & Css coding. This Project Will Be Helpful For You. -->
+<body background="wallpaper.jpg">
+<div class="box">
+    <div class="calculator">
+        <form name="cal">
+            <input type="text" name="diplay">
+            <br><br>
+            <input type="button" value="AC" onclick="cal.diplay.value=''" id="del"> <!-- This will work as All Clear Button of a simple calculator -->
+            <br><br>
+            <input type="button" value="00" onclick="cal.diplay.value+='00'">
+            <input type="button" value="/" onclick="cal.diplay.value+='/'"><!-- This Will Work As Devide Button -->
+            <input type="button" value="*" onclick="cal.diplay.value+='*'"><!-- This Will Work As Multiply Button -->
+            <input type="button" value="-" onclick="cal.diplay.value+='-'"><!-- This Will Work As Minus Button -->
+            <br><br>
+            <input type="button" value="7" onclick="cal.diplay.value+='7'"> 
+            <input type="button" value="8" onclick="cal.diplay.value+='8'">
+            <input type="button" value="9" onclick="cal.diplay.value+='9'">
+            <input type="button" value="+" onclick="cal.diplay.value+='+'"><!-- This Will Work As Addition Button -->
+            <br><br>
+            <input type="button" value="4" onclick="cal.diplay.value+='4'">
+            <input type="button" value="5" onclick="cal.diplay.value+='5'">
+            <input type="button" value="6" onclick="cal.diplay.value+='6'">
+            <input type="button" value="." onclick="cal.diplay.value+='.'"><!-- It's Point Button -->
+            <br><br>
+            <input type="button" value="0" onclick="cal.diplay.value+='0'">
+            <input type="button" value="1" onclick="cal.diplay.value+='1'">
+            <input type="button" value="2" onclick="cal.diplay.value+='2'">
+            <input type="button" value="3" onclick="cal.diplay.value+='3'">
+            <br><br>
+            <input type="button" value="=" onclick="cal.diplay.value=eval(cal.diplay.value)" id="equal">
+            <!-- Equal Button will calculate the value and will show it in the Display -->
+        </form>
+    </div>
+</div>
+    
+</body>
+</html>
